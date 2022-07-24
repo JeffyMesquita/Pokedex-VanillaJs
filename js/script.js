@@ -23,7 +23,7 @@ const fetchPokemon = async (pokemon) => {
 const renderPokemon = async (pokemon) => {
   pokemonName.innerHTML = 'Loading...';
   pokemonNumber.innerHTML = '';
-  pokemonImage.innerHTML = '../images/pokeballAnimated.gif';
+  pokemonImage.innerHTML = './images/pokeballAnimated.gif';
 
   const data = await fetchPokemon(pokemon);
 
@@ -40,7 +40,7 @@ const renderPokemon = async (pokemon) => {
   } else {
     pokemonName.innerHTML = 'Pokemon not found';
     pokemonNumber.innerHTML = '';
-    pokemonImage.src = '../images/pokeballAnimated.gif';
+    pokemonImage.src = './images/pokeballAnimated.gif';
 
     input.value = '';
   }
